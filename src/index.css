@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary-green: #064E3B;
+    --primary-green-dark: #022C22;
+    --primary-green-light: #0B5D44;
+    --primary-green-accent: #10B981;
+    --primary-gold: #D4AF37;
+    --primary-gold-light: #F3E5AB;
+    --primary-gold-dark: #B8860B;
+    --surface-warm: #FBF9F5;
+    --surface-card: #FFFFFF;
+    --surface-dark: #02231A;
+    --surface-dark-card: #043E30;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #02231A;
+    color: #F8FAFC;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Dynamic Interaction Utility Classes */
+.btn-dynamic {
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-dynamic:hover {
+  transform: translateY(-1.5px);
+}
+.btn-dynamic:active {
+  transform: translateY(0.5px) scale(0.98);
+}
+
+.card-dynamic {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.card-dynamic:hover {
+  transform: translateY(-2px);
+}
+
+/* Custom scrollbars with Green & Gold branding */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(2, 44, 34, 0.6);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(16, 185, 129, 0.35);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 175, 55, 0.7);
+}

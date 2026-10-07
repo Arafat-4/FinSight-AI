@@ -1,0 +1,6 @@
+{
+  "name": "FinSight AI — Financial Customer Insights Platform",
+  "description": "AI-powered financial customer insights, risk monitoring, transaction intelligence, and recommendation platform.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
